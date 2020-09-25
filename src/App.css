@@ -1,38 +1,197 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(44, 42, 42);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  background: #424242;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.navbar .container {
+  width: 1520px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+
+.navbar ul li a i {
+  font-size: 22px;
+}
+
+.navbar h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar h4 i {
+  font-size: 42px;
+  color: #fff;
+  margin: 18px;
+}
+
+.navbar h4 p {
+  font-size: 22px;
+  color: #fff;
+}
+
+.navbar .container input {
+  padding: 10px;
+  width: 150px;
+  background-color: #645e5e;
+  border-radius: 100px;
+  border: 1px solid #645e5e;
+  color: #fff;
   text-align: center;
+  font-size: 12px;
+}
+/* jumbotron section */
+
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+  background-color: #252424;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* fake notification */
+
+.fa-envelope {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.msg-notification {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(235, 238, 34);
+  color: #000;
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  z-index: 2;
+  text-align: center;
+  padding: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-list {
+  width: 80%;
+  height: 400px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 30px;
+  /* border: 1px solid #444; */
+}
+
+.searchForm .search-user-input {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.searchForm {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.searchForm .submitBtn {
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(81, 80, 160);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.formContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.userCard {
+  width: 200px;
+  height: 300px;
+  background-color: #e7e5e5;
+  border: 1px solid #c3c3c3;
+
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userCard img {
+  width: 100px;
+}
+.userCardHeader {
+  /* width: 100%; */
+  background-color: skyblue;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.userCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardlistContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
